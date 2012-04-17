@@ -1,0 +1,28 @@
+<head>
+  <title>Sam and David's Test Chat Server</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>This is a Chat Server. Really.</h1>
+  </div>
+  {{> chat}}
+  {{> input}}
+</body>
+
+<template name="chat">
+  <div class="chat">
+    {{#each message}}
+      <span class="timestamp">[{{displayTime timestamp}}] </span>
+      <span class="name">{{name}}:</span>
+      <span class="message_text">{{text}}</span>
+      <br />
+    {{/each}}
+  </div>
+</template>
+
+<template name="input">
+  <input type="text" id="name_input" size="10" />
+  :
+  <input type="text" id="chat_input" size="50" />
+</template>

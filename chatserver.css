@@ -1,0 +1,13 @@
+.chat .name {
+  font-weight: bold;
+}
+
+.chat .timestamp {
+  color: gray;
+}
+
+.chat {
+  height: 400px;
+  border: 1px #000 solid;
+  overflow: auto;
+}
